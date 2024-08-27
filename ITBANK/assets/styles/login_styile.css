@@ -1,0 +1,197 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6e6e6;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+header {
+    background-color: #0077cc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    position: fixed;
+    z-index: 1000; /**/
+    padding: 5px 15px;
+}
+
+/*estilos al logo*/
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo-prueba {
+    width: 100px;
+    height: auto;
+}
+
+/*estilos a la barra de navegacion en el header*/
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/*estilos a la barra lateral*/
+aside {
+    background-color: #333;
+    color: white;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    padding-top: 100px; /* Espacio para no sobreponer el menú lateral al header */
+    z-index: 500;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/*estilos a los iconos*/
+.fa-solid {
+    margin: 5px;
+}
+
+aside ul li {
+    padding: 10px;
+}
+
+aside ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.login-contenedor {
+    background-color: #ffffff;
+    padding: 1%;
+    padding-top: 15%;
+    width: 40%;
+    margin-top: 4%;
+    height: 100%;
+    left: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+form{
+    display: inline-block;
+    width: 70%;
+}
+
+.login-contenedor input[type="text"], 
+.login-contenedor input[type="password"]{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-contenedor input[type="submit"]{
+    width: 90%;
+    background-color: #0077cc;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-contenedor input[type="submit"]:hover{
+    background-color: #024a7d;
+}
+
+.login-contenedor h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight:lighter;
+    color: #0077cc;
+    display: inline;
+    justify-content: center;
+    margin: 8px;
+    text-align: center;
+}
+
+.login-contenedor p{
+    color: #0077cc;
+    font-size: 15px;
+    display: inline;
+    margin: 8px;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-contenedor p:hover{
+    color: #024a7d;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.principal{
+    position: fixed;
+    left: 15%;
+    top: 7%;
+    height: 93%;
+    width: 90%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .login-contenedor {width: 100%;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .login-contenedor {width: 60%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .login-contenedor {width: 50%;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .login-contenedor {width: 40%;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .login-contenedor {width: 30%;}
+}

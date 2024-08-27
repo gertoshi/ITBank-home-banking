@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cuentas - ITBank</title>
+</head>
+<body>
+    <header>
+        <a href="../../index.html">
+            <img id="logo-prueba" src="../img/ITBA_logo_blanco.png" alt="ItBank logo">
+        </a>
+    </header>
+    <div>
+
+        <aside>
+            <ul>
+                <li>
+                    <a href="../pages/login.html"><i class="fa-solid fa-user-astronaut"></i>INICIAR SESIÓN</a>
+                </li>
+
+                <li>
+                    <a href="../pages/cuentas.html"><i class="fa-solid fa-file-invoice-dollar"></i>Cuentas</a>
+                </li>
+
+                <li>
+                    <a href="../pages/transferencias.html"><i class="fa-solid fa-money-bill-transfer"></i>Transferencias</a>
+                </li>
+
+                <li>
+                    <a href="../pages/pagos.html"><i class="fa-solid fa-money-check-dollar"></i>Pagos</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+<main>
+    <div id="prestamo">
+        <div>
+            <h2>Simulá tu préstamo!</h2>
+        </div>
+        <p>Ingresá el monto que te gustaría recibir:</p>
+        <input type="number">
+        <div>
+            <p>¿En cuántos meses?</p>
+            <label>
+                <input type="radio" name="tiempo" value="1">
+                1 mes
+            </label>
+            <label>
+                <input type="radio" name="tiempo" value="3">
+                3 meses
+            </label>
+            <label>
+                <input type="radio" name="tiempo" value="6">
+                6 meses
+            </label>
+            <label>
+                <input type="radio" name="tiempo" value="12">
+                12 meses
+            </label>
+        </div>
+        <button>Calcular</button>
+        <div>
+            <p>Tu monto total a pagar sería de: $</p>
+        </div>
+    </div>
+    
+    <div id="conversor">
+        <h2>Pasá tu plata a Dólares</h2>
+        <p>Ingresá el monto que te gustaría cambiar:</p>
+        <input type="number">
+        <button>Calcular</button>
+        <div>
+            <p>Recibirías U$D:<p>
+        </div>
+    </div>
+</main>
+
+<script src="assets/scripts/app.js"></script>
+</body>
+</html>

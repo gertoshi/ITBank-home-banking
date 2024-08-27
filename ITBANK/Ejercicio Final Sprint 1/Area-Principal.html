@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Principal</title>
+    <style>
+        table, tr, th, td{
+            margin: auto;
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="Area-Principal.css">
+</head>
+<body>
+    <script src="Area-Principal.js"></script>
+    <section id="Inicio">
+        <h1 style="text-align: center;">Bienvenido, [Nombre]</h1>
+        <div class="resumen-cuenta">
+            <h3>Resumen de Cuenta</h3>
+            <p>Saldo Disponible: $<strong>[Monto]</strong></p>
+            <p>Última Actividad: <strong>[Transacción]</strong></p>
+        </div>
+        <div class="acceso-rapido">
+            <h3>Acceso Rápido</h3>
+            <p><a href="#transferencias">Realizar Transferencias</a></p>
+            <p><a href="#pagos">Pagar Facturas</a></p>
+        </div>
+    </section>
+
+    <br>
+
+    <section id="Cuentas" style="text-align: center;">
+        <h1>Mis Cuentas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de Cuenta</th>
+                    <th>Número de Cuenta</th>
+                    <th>Saldo</th>
+                    <th>Movimientos Recientes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="cuenta-1">
+                    <td>Cuenta Corriente</td>
+                    <td>123456789</td>
+                    <td class="saldo">$5000</td>
+                    <td class="movimiento">-</td>
+                </tr>
+                <tr id="cuenta-2">
+                    <td>Cuenta de Ahorros</td>
+                    <td>987654321</td>
+                    <td class="saldo">$3000</td>
+                    <td class="movimiento">-</td>
+                </tr>
+                <tr id="cuenta-3">
+                    <td>Cuenta de Inversión</td>
+                    <td>111213141</td>
+                    <td class="saldo">$10000</td>
+                    <td class="movimiento">-</td>
+                </tr>
+                <tr id="cuenta-4">
+                    <td>Cuenta de Pago</td>
+                    <td>141312111</td>
+                    <td class="saldo">$2000</td>
+                    <td class="movimiento">-</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <br>
+
+    <section id="Transferencias" style="text-align: center;">
+        <h1>Realizar Transferencias</h1>
+        <form action="" method="post">
+
+            <label for="cuenta-origen">Cuenta de Origen: </label>
+            <select name="cuenta-origen" id="cuenta-origen">
+                <option value="cuenta-1">Cuenta Corriente</option>
+                <option value="cuenta-2">Cuenta de Ahorros</option>
+                <option value="cuenta-3">Cuenta de Inversión</option>
+                <option value="cuenta-4">Cuenta de Pago</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="cuenta-destino">Cuenta de Destino: </label>
+            <input type="text" name="cuenta-destino" id="cuenta-destino" placeholder="Número de Cuenta" required>
+
+            <br>
+            <br>
+
+            <label for="monto1">Monto: </label>
+            <input type="text" name="monto1" id="monto1" placeholder="Monto a Transferir" required>
+
+            <br>
+            <br>
+
+            <button type="submit">Realizar Tranferencia</button>
+        </form>
+    </section>
+
+    <br>
+
+    <section id="Pagos" style="text-align: center;">
+        <h1>Realizar Pago</h1>
+        <form action="" method="post">
+            <label for="tipo-servicio">Tipo de Servicio: </label>
+            <select name="tipo-servicio" id="tipo-servicio">
+                <option value="agua">Agua</option>
+                <option value="electricidad">Electricidad</option>
+                <option value="gas">Gas</option>
+                <option value="internet">Internet</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="numero-factura">Número de Factura: </label>
+            <input type="text" name="numero-factura" id="numero-factura" required>
+
+            <br>
+            <br>
+
+            <label for="monto2">Monto: </label>
+            <input type="text" name="monto2" id="monto2" placeholder="Monto a Transferir" required>
+
+            <br>
+            <br>
+
+            <button type="submit">Realizar Pago</button>
+        </form>
+    </section>
+
+    <br>
+
+</body>
+</html>

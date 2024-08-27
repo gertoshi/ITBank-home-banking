@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../Ejercicio Final Sprint 1/Area-Principal.css">
+    <title>Transferencias - ITBank</title>
+</head>
+<body>
+    <header>
+        <a href="../../index.html">
+            <img id="logo-prueba" src="../img/ITBA_logo_blanco.png" alt="ItBank logo">
+        </a>
+    </header>
+    <aside>
+        <ul>
+            <li>
+                <a href="../pages/login.html"><i class="fa-solid fa-user-astronaut"></i>INICIAR SESIÓN</a>
+            </li>
+
+            <li>
+                <a href="../pages/cuentas.html"><i class="fa-solid fa-file-invoice-dollar"></i>Cuentas</a>
+            </li>
+
+            <li>
+                <a href="../pages/transferencias.html"><i class="fa-solid fa-money-bill-transfer"></i>Transferencias</a>
+            </li>
+
+            <li>
+                <a href="../pages/pagos.html"><i class="fa-solid fa-money-check-dollar"></i>Pagos</a>
+            </li>
+    </ul>
+</aside>
+<main>
+    <section id="Transferencias" style="text-align: center;">
+        <h1>Realizar Transferencias</h1>
+        <form action="" method="post">
+
+            <label for="cuenta-origen">Cuenta de Origen: </label>
+            <select name="cuenta-origen" id="cuenta-origen">
+                <option value="cuenta-1">Cuenta Corriente</option>
+                <option value="cuenta-2">Cuenta de Ahorros</option>
+                <option value="cuenta-3">Cuenta de Inversión</option>
+                <option value="cuenta-4">Cuenta de Pago</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="cuenta-destino">Cuenta de Destino: </label>
+            <input type="text" name="cuenta-destino" id="cuenta-destino" placeholder="Número de Cuenta" required>
+
+            <br>
+            <br>
+
+            <label for="monto1">Monto: </label>
+            <input type="text" name="monto1" id="monto1" placeholder="Monto a Transferir" required>
+
+            <br>
+            <br>
+
+            <button type="submit">Realizar Tranferencia</button>
+        </form>
+    </section>
+</main>
+
+<script src="assets/scripts/app.js"></script>
+</body>
+</html>
